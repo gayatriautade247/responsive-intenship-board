@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse, search and filter internship opportunities by domain, location and work mode.">
+  <title>Internship Board | Find your next opportunity</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to internships</a>
+  <header class="site-header">
+    <div class="nav wrap">
+      <a class="brand" href="#" aria-label="Launchpad home"><span class="brand-mark">L</span><span>launchpad<span class="brand-dot">.</span></span></a>
+      <nav aria-label="Main navigation"><a href="#internships" class="active">Internships</a><a href="#about">About</a></nav>
+      <a class="nav-cta" href="#internships">Explore roles <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="eyebrow"><span class="pulse"></span> OPPORTUNITIES FOR WHAT'S NEXT</div>
+        <h1>Find work that<br><span>moves you forward.</span></h1>
+        <p class="hero-copy">A hand-picked board of internships to help you learn, build and make your next move.</p>
+        <div class="hero-stats" aria-label="Board highlights">
+          <div><strong id="hero-count">12</strong><span>Open opportunities</span></div>
+          <div><strong>06</strong><span>Career domains</span></div>
+          <div><strong>01</strong><span>Next big step</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-card"><span>YOUR NEXT</span><b>chapter<span>.</span></b><small>starts here ↗</small></div><div class="art-star">✳</div></div>
+      </div>
+    </section>
+
+    <section class="board wrap" id="internships">
+      <div class="section-heading">
+        <div><div class="eyebrow dark-eyebrow">THE OPPORTUNITY BOARD</div><h2>Explore internships<span>.</span></h2><p>Find a role that matches your curiosity.</p></div>
+        <div class="result-count" aria-live="polite"><strong id="result-number">12</strong> roles found</div>
+      </div>
+
+      <div class="filter-panel">
+        <div class="search-box"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">Search internships</label><input id="search" type="search" placeholder="Search role, company or keyword..." autocomplete="off"><kbd>/</kbd></div>
+        <div class="select-wrap"><label class="sr-only" for="domain">Filter by domain</label><select id="domain"><option value="">All domains</option><option>Technology</option><option>Design</option><option>Marketing</option><option>Data</option><option>Business</option><option>Content</option></select></div>
+        <div class="select-wrap"><label class="sr-only" for="mode">Filter by work mode</label><select id="mode"><option value="">Any work mode</option><option>Remote</option><option>Hybrid</option><option>On-site</option></select></div>
+        <button id="clear" class="clear-btn" type="button">Clear filters <span aria-hidden="true">↺</span></button>
+      </div>
+      <div class="active-filters" id="active-filters" aria-live="polite"></div>
+
+      <div id="internship-grid" class="internship-grid" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state" hidden><div class="empty-icon">⌕</div><h3>No matching internships</h3><p>Try another keyword or clear your filters to see all opportunities.</p><button id="reset-empty" type="button">Show all internships</button></div>
+      <div id="error-state" class="error-state" role="alert" hidden>Something went wrong while displaying internships. Please refresh the page.</div>
+      <p class="demo-note">Demo listings for this front-end project. Check each organisation's official page before applying.</p>
+    </section>
+
+    <section class="bottom-cta" id="about"><div class="wrap cta-inner"><div><div class="eyebrow">YOUR FUTURE ISN'T ONE-SIZE-FITS-ALL</div><h2>Stay curious.<br>Keep moving.</h2></div><p>Every great career starts with a first opportunity. Explore, experiment and find yours.</p><a href="#internships" class="cta-arrow" aria-label="Back to internships">↑</a></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand footer-brand" href="#"><span class="brand-mark">L</span><span>launchpad<span class="brand-dot">.</span></span></a><span>Designed to help you take the next step.</span><span>© 2026 Launchpad</span></div></footer>
+</body>
+</html>
